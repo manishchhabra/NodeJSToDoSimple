@@ -13,3 +13,9 @@ exports.save = function(req, res) {
   globalTODO.push(newTodo);
   res.redirect("/");
 }
+
+exports.delete = function(req, res) {
+  todoID = req.body['todo-id'];
+  globalTODO.splice(todoID, 1);
+  res.redirect("/");
+}
