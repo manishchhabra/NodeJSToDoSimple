@@ -2,7 +2,7 @@ var globalTODO = [];
 
 exports.list = function(req, res) {
   res.render('todo', {
-    title: 'New Todo List',
+    title: 'Simple Todo List App',
     todos: globalTODO
   });
 };
