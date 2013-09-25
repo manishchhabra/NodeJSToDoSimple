@@ -1,10 +1,13 @@
 var globalTODO = [];
 
 exports.list = function(req, res) {
-  res.render('todo', {
+/*  res.render('todo', {
     title: 'Simple Todo List App',
     todos: globalTODO
   });
+*/
+  res.locals = {title: 'Title test', todos: globalTODO};
+  return res.render('todo_hogan');  
 };
 
 exports.save = function(req, res) {
