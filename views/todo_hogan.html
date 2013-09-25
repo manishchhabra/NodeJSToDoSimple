@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head><title>{{title}}</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<h1>todo example using nodejs, express and hogan-express</h1>
+<form action="/save" method="post">
+  <p>
+    <label>enter a new todo item</label>
+    <input type="text" placeholder="new todo" name="todo-text"></p>
+  <p><input type="submit" value="save"></p>
+  <ul>
+  {{#todos}}
+    <li>{{name}}</li>
+  {{/todos}}
+  </ul>
+</form>
+</body>
+</html>
