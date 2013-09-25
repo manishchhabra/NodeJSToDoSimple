@@ -1,1 +1,5 @@
-simple todo application using node.js and express!
+###Simple TODO Application using:
+
+* node.js
+* express
+* hogan-express for mustache templating.
